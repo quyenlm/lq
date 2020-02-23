@@ -1,0 +1,34 @@
+package com.tencent.mgcproto.serviceproxy;
+
+import com.squareup.wire.ProtoEnum;
+
+public enum serviceproxy_subcmd implements ProtoEnum {
+    SUBCMD_SERVICEPROXY_STLOGIN(1),
+    SUBCMD_SERVICEPROXY_PTLOGIN(2),
+    SUBCMD_SERVICEPROXY_HELLO(3),
+    SUBCMD_SERVICEPROXY_PUSH(4),
+    SUBCMD_SERVICEPROXY_PUSH_BY_ID(5),
+    SUBCMD_SERVICEPROXY_PUSH_BY_UUID(6),
+    SUBCMD_SERVICEPROXY_KICK_BY_ID(9),
+    SUBCMD_SERVICEPROXY_KICK_BY_UUID(10),
+    SUBCMD_SERVICEPROXY_PUSH_BY_FILTER(14),
+    SUBCMD_SERVICEPROXY_KICK_BY_SELF(15),
+    SUBCMD_SERVICEPROXY_PUSH_BY_FLOW(16),
+    SUBCMD_SERVICEPROXY_PUSH_BY_GROUP(18),
+    SUBCMD_SERVICEPROXY_QTLOGIN(32),
+    SUBCMD_SERVICEPROXY_QTLOGOUT(33),
+    SUBCMD_SERVICEPROXY_ROOM_ENTER(34),
+    SUBCMD_SERVICEPROXY_ROOM_LEAVE(35),
+    SUBCMD_SERVICEPROXY_ROOM_HELLO(36),
+    SUBCMD_SERVICEPROXY_MUTI_PUSH_BY_FLOW(37);
+    
+    private final int value;
+
+    private serviceproxy_subcmd(int value2) {
+        this.value = value2;
+    }
+
+    public int getValue() {
+        return this.value;
+    }
+}

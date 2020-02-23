@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/unipay_toast"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/unipay_id_apToastImg" style="@style/unipay_iconwarn" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/unipay_id_apToastText" android:text="输入错误" style="@style/unipay_abroad_text.middle" />
+</LinearLayout>

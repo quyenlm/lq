@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/noticemain" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/titleLine" android:background="@drawable/com_tencent_msdk_notice_alert_page_round_top_bkg" android:layout_height="45.0dip" style="@style/layout_vertical">
+        <ImageView android:layout_gravity="center" android:id="@id/popupImage" android:layout_marginLeft="15.0dip" style="@style/layout_wrap" />
+        <TextView android:textSize="@dimen/title" android:textColor="@color/notice_main_title_text_color" android:layout_gravity="center" android:id="@id/title" android:background="@drawable/transparent" android:layout_marginLeft="10.0dip" android:text="@string/notice_system_notice" style="@style/layout_wrap" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/noticeContentLine" android:background="@color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/layout_vertical">
+        <com.tencent.smtt.sdk.WebView android:id="@id/noticeContent" android:layout_width="@dimen/image_width_v" android:layout_height="@dimen/image_height_v" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/tempLoadLayer" android:background="@color/white" android:visibility="visible" android:layout_width="@dimen/image_width_v" android:layout_height="@dimen/image_height_v" style="@style/layout_vertical">
+        <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/webLoad" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/notice_web_loading" android:gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="22.0dip" android:text="@string/notice_web_loading" android:layout_toRightOf="@id/webLoad" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/tempLoadFailed" android:background="@color/white" android:visibility="gone" android:layout_width="@dimen/image_width_v" android:layout_height="@dimen/image_height_v" style="@style/layout_vertical">
+        <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/webFail" android:background="@drawable/com_tencent_msdk_notice_web_loading" android:layout_width="18.0dip" android:layout_height="15.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="@color/notice_web_failed" android:gravity="top" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_web_failed" android:layout_toRightOf="@id/webFail" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/toolbarline" android:background="@drawable/com_tencent_msdk_notice_popup_round_bottom_btn" android:layout_height="55.0dip" android:bottom="1.0dip" style="@style/layout_vertical">
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Button android:textSize="@dimen/confirm_textsize" android:textColor="@color/notice_btn_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/confirmbtn" android:background="@drawable/com_tencent_msdk_notice_popup_round_bottom_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/notice_btn_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

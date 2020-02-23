@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingTop="10.0dip" android:paddingRight="30.0dip" android:paddingBottom="10.0dip" style="@style/unipay_abroad_fill">
+        <TextView android:textSize="17.0sp" android:layout_marginBottom="20.0dip" android:text="MOL Direct Top-Up\nPrice List" style="@style/unipay_abroad_itemtext" />
+        <LinearLayout android:layout_marginBottom="15.0dip" android:layout_weight="100.0" style="@style/unipay_abroad_linear_ver">
+            <TextView android:id="@id/unipay_id_exchange_rate_one" android:layout_marginBottom="15.0dip" android:text="Test" style="@style/unipay_abroad_text" />
+        </LinearLayout>
+        <Button android:id="@id/unipay_id_molpin_btn" android:text="Top Up" style="@style/unipay_abroad_embtn" />
+        <TextView android:textColor="@color/unipay_abroad_thin2" android:layout_gravity="center_horizontal" android:layout_marginTop="5.0dip" android:text="Click the button bellow pay" style="@style/unipay_abroad_text.small" />
+    </LinearLayout>
+</ScrollView>

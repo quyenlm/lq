@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/ntvs_main" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/ntvs_main_tabcontent_1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" app:layout_constraintDimensionRatio="w,1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/ntvs_tabbar_bg" android:layout_width="0.0dip" android:layout_height="36.0dip" android:scaleType="fitXY" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/valor_toolbar_bg" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ntvs_main_tabs_container" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="76.0dip" app:layout_constraintTop_toTopOf="parent"> app:layout_constraintStart_toStartOf="@+id/ntvs_main_imgbtn_close"
+            app:layout_constraintEnd_toEndOf="parent" </LinearLayout>
+        <ImageView android:id="@id/ntvs_main_imgbtn_close" android:visibility="visible" android:layout_width="100.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/common_back" />
+    </android.support.constraint.ConstraintLayout>
+    <com.tencent.ieg.ntv.view.FDTabView android:id="@id/ntvs_main_tabview" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ntvs_main_tabcontent_1" />
+    <android.support.constraint.ConstraintLayout android:id="@id/replay_ctn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="40.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <WebView android:id="@id/replay_ctn_webview" android:background="@color/ntvs_common_color_black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <android.support.constraint.ConstraintLayout android:background="@color/ntvs_common_color_black" android:layout_width="fill_parent" android:layout_height="40.0dip" app:layout_constraintBottom_toTopOf="parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:id="@id/replay_btn_back" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_weight="2.5" app:srcCompat="@drawable/webview_back" />
+                <ImageView android:id="@id/replay_btn_forward" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_weight="2.5" app:layout_constraintStart_toEndOf="@id/replay_btn_back" app:srcCompat="@drawable/webview_forward" />
+                <ImageView android:id="@id/replay_btn_refresh" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_weight="2.5" app:layout_constraintStart_toEndOf="@id/replay_btn_forward" app:srcCompat="@drawable/webview_refresh" />
+                <ImageView android:id="@id/replay_btn_close" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_weight="2.5" app:layout_constraintEnd_toEndOf="parent" app:srcCompat="@drawable/webview_close" />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

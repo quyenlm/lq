@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@color/unipay_country_list_color" android:layout_width="120.0dip" android:layout_height="49.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/unipay_abroad_selectinner">
+        <ImageView android:id="@id/unipay_id_all_region_item_image" style="@style/unipay_abroad_iconflag" />
+        <TextView android:id="@id/unipay_id_all_region_item_text" android:text="US" style="@style/unipay_abroad_textcountry" />
+    </LinearLayout>
+</LinearLayout>

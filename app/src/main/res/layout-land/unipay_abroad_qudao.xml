@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/unipay_id_appmall_root" android:padding="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/unipay_abroad_head">
+        <TextView android:text="Buy Diamonds" style="@style/unipay_abroad_h1" />
+        <ImageButton android:id="@id/unipay_id_back" android:src="@drawable/unipay_abroad_iconback" style="@style/unipay_abroad_topiccn" />
+        <ImageButton android:id="@id/unipay_id_close" android:visibility="gone" android:src="@drawable/unipay_abroad_iconclose" android:layout_alignParentRight="true" style="@style/unipay_abroad_topiccn" />
+    </RelativeLayout>
+    <LinearLayout style="@style/unipay_abroad_main">
+        <ListView android:id="@id/unipay_id_channelList" android:fadingEdge="none" android:listSelector="#00000000" android:scrollingCache="false" android:cacheColorHint="#00000000" android:choiceMode="singleChoice" style="@style/unipay_abroad_side" />
+        <LinearLayout android:orientation="vertical" android:id="@id/unipay_id_mainContent" style="@style/unipay_abroad_fill" />
+    </LinearLayout>
+</LinearLayout>

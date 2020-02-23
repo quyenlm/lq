@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fix">Open Settings</string>
+    <string name="package_is_invaild">Install Error: Please uninstall the application and redownload the game from Google Play.</string>
+    <string name="package_is_invaild_title" />
+    <string name="qmi_loading_recorder_plugin">Checking recording plug-ins</string>
+    <string name="qmi_no_recorder_plugin">Current SDK does not have any recording plug-ins.</string>
+    <string name="qmi_recorder_plugin_upgrade_failed">Upgrade failed.</string>
+    <string name="quit">Exit</string>
+    <string name="retry">Retry</string>
+    <string name="submit">Confirm</string>
+    <string name="u_must_agree_me">"This game requires you to grant the following permissions! Please enable these items: 
+
+Making and managing calls: Required to improve game performance. 
+
+Storage: Required to install and load critical game resources."</string>
+    <string name="u_must_agree_me_title">Error: Permission request denied</string>
+    <string name="u_need_agree_me">"You will be prompted to grant several permissions. The game requires you to grant all these permissions in order to avoid flashbacks. 
+
+Making and managing calls: Required to improve game performance. 
+
+Storage: Required to install and load critical game resources."</string>
+    <string name="u_need_agree_me_title">Permission Request</string>
+    <string name="u_need_fix_config">"In order to run the game, please grant all needed system permissions. Please enter the settings menu of your device to set permissions. 
+
+Making and managing calls: Required to improve game performance. 
+
+Storage: Storage needed will include the game itself and related resource packs."</string>
+    <string name="u_need_fix_config_title">Error: Permission request denied</string>
+</resources>

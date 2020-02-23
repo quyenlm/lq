@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/share_bg_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@color/colorLine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <GridView android:gravity="center" android:id="@id/share_gridview" android:background="@android:color/transparent" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" />
+    <Button android:textSize="@dimen/cancel_font_size" android:typeface="monospace" android:textColor="@color/colorFonts" android:gravity="center" android:id="@id/share_cancel" android:background="@color/colorShareBtnBg" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" android:text="@string/imsdk_webview_cancel" />
+</LinearLayout>

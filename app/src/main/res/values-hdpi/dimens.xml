@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="msdk_ad_dlg_image_height">186.0dip</dimen>
+    <dimen name="msdk_ad_dlg_image_width">280.0dip</dimen>
+    <dimen name="msdk_ad_dlg_total_width">296.0dip</dimen>
+    <dimen name="confirm_textsize">15.0dip</dimen>
+    <dimen name="dialog_content_margin">6.0dip</dimen>
+    <dimen name="folder_chooser_title_height">50.0dip</dimen>
+    <dimen name="folder_chooser_title_image_margin_left">7.0dip</dimen>
+    <dimen name="folder_chooser_title_image_margin_right">7.0dip</dimen>
+    <dimen name="image_height_h">170.0dip</dimen>
+    <dimen name="image_height_v">398.0dip</dimen>
+    <dimen name="image_width_h">417.0dip</dimen>
+    <dimen name="image_width_v">270.0dip</dimen>
+    <dimen name="notice_content">15.0dip</dimen>
+    <dimen name="notice_title">15.0dip</dimen>
+    <dimen name="notice_width">312.0dip</dimen>
+    <dimen name="roll_dialog_height">30.0dip</dimen>
+    <dimen name="roll_height">30.0dip</dimen>
+    <dimen name="roll_textsize">14.0dip</dimen>
+    <dimen name="search_engine_dialog_item_height">48.0dip</dimen>
+    <dimen name="share_dialog_icon_height">28.0dip</dimen>
+    <dimen name="share_dialog_icon_width">28.0dip</dimen>
+    <dimen name="share_to_item_margin">10.0dip</dimen>
+    <dimen name="title">15.0dip</dimen>
+</resources>

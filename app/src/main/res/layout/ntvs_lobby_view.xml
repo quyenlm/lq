@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip" android:layout_weight="7.05">
+            <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/valor_d1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.3" />
+                <com.tencent.ieg.ntv.view.PlayerView android:id="@id/lobby_vedio_player_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" />
+            </android.support.constraint.ConstraintLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/right_module" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip" android:layout_weight="2.95">
+            <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/valor_d1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.3" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip">
+                    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="36.0dip">
+                        <ImageView android:id="@id/ntvs_lobby_bg" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="fitXY" android:layout_weight="1.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/common_tab_bg2" />
+                        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="36.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                            <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <com.tencent.ieg.ntv.view.CheckableImageView android:id="@id/ntvs_lobby_tab_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_weight="1.0" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ntvs_main_tab_res" />
+                                <TextView android:textSize="12.0dip" android:textColor="@color/ntvs_main_tab_txt_color" android:gravity="center" android:id="@id/ntvs_lobby_tab_0_txt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="聊天" android:layout_weight="1.0" />
+                            </android.support.constraint.ConstraintLayout>
+                            <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <com.tencent.ieg.ntv.view.CheckableImageView android:id="@id/ntvs_lobby_tab_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_weight="1.0" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ntvs_main_tab_res" />
+                                <TextView android:textSize="12.0dip" android:textColor="@color/ntvs_main_tab_txt_color" android:gravity="center" android:id="@id/ntvs_lobby_tab_1_txt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="赛程" android:layout_weight="1.0" />
+                                <ImageView android:id="@id/ntvs_lobby_tab_1_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="3.0dip" android:scaleX="0.6" android:scaleY="0.6" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/common_new_point" />
+                            </android.support.constraint.ConstraintLayout>
+                        </LinearLayout>
+                    </android.support.constraint.ConstraintLayout>
+                    <com.tencent.ieg.ntv.view.FDTabView android:id="@id/ntvs_subveiw_tabview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout android:id="@id/tv_center_com_tip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:background="@drawable/tipsbg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/ntvs_common_tips_text_color" android:id="@id/tv_center_com_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="字符串长度超长了 支持 {0} - 当前字数    {1} -- 支持的总长度" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout android:id="@id/ntv_holder_bonus_hall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="48.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <ImageView android:id="@id/ntv_holder_bonus_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" app:layout_constraintEnd_toEndOf="parent" app:srcCompat="@drawable/rewardbox_close" />
+        <ImageView android:id="@id/ntv_holder_bonus_timetxt_bg" android:layout_width="60.0dip" android:layout_height="18.0dip" android:layout_marginTop="50.0dip" app:layout_constraintEnd_toEndOf="@id/ntv_holder_bonus_icon" app:layout_constraintStart_toStartOf="@id/ntv_holder_bonus_icon" app:layout_constraintTop_toTopOf="@id/ntv_holder_bonus_icon" app:srcCompat="@drawable/reward_text_bg" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/ntvs_bonus_time_text_color" android:id="@id/ntv_holder_bonus_timetxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="-:-" app:layout_constraintBottom_toBottomOf="@id/ntv_holder_bonus_timetxt_bg" app:layout_constraintEnd_toEndOf="@id/ntv_holder_bonus_timetxt_bg" app:layout_constraintStart_toStartOf="@id/ntv_holder_bonus_timetxt_bg" app:layout_constraintTop_toTopOf="@id/ntv_holder_bonus_timetxt_bg" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

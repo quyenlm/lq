@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qmi_loading_recorder_plugin">Loading plugin</string>
+    <string name="qmi_no_recorder_plugin">Plugin not found</string>
+    <string name="qmi_recorder_plugin_upgrade_failed">Unable to update plugin</string>
+</resources>

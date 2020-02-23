@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/LinearLayout1" android:background="@drawable/com_tencent_tmassistant_sdk_popup_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/white_list_title_size" android:textColor="#ff288be1" android:gravity="center_vertical" android:id="@id/dlg_title_tv" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/white_list_dlg_title" />
+    <TextView android:id="@id/line" android:background="#ff288be1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:height="2.0dip" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/content" android:paddingLeft="30.0px" android:paddingRight="30.0px" android:paddingBottom="30.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@id/scrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/dlg_title_tv" android:layout_alignLeft="@id/dlg_body_tv" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/white_list_body_size" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/dlg_body_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/white_list_dlg_body" />
+        </ScrollView>
+        <LinearLayout android:id="@id/ButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/scrollView1" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+            <Button android:textSize="@dimen/white_list_button_text_size" android:textColor="#ff858585" android:id="@id/negtive_btn" android:background="@drawable/com_tencent_tmassistant_sdk_negtive_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="取消" android:layout_weight="1.0" />
+            <FrameLayout android:id="@id/positive_btn_frame_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:textSize="@dimen/white_list_button_text_size" android:textColor="#ff858585" android:id="@id/positive_btn" android:background="@drawable/com_tencent_tmassistant_sdk_positive_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                <ProgressBar android:id="@id/download_pb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxHeight="78.0px" android:progressDrawable="@drawable/com_tencent_tmassistant_sdk_pregress_button" android:minHeight="78.0px" style="?android:progressBarStyleHorizontal" />
+                <TextView android:textSize="@dimen/white_list_button_text_size" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/progress_txt_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/white_list_positive_download" android:singleLine="true" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

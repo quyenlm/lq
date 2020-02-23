@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/thrdcall_shareitems_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:gravity="center_horizontal" android:id="@id/dlg_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:verticalSpacing="20.0dip" android:numColumns="4" />
+    <Button android:textSize="20.0sp" android:textColor="@color/thrdcall_sharetext_color" android:id="@id/dlg_btn_cancel" android:background="@drawable/msdk_thrdcall_sheet_btn_cancel_bkg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@android:string/cancel" />
+</LinearLayout>

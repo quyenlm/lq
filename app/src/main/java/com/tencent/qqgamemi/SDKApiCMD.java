@@ -1,0 +1,47 @@
+package com.tencent.qqgamemi;
+
+public class SDKApiCMD {
+    public static final String CMD_BACKGROUD = "qmi.onBackground";
+    public static final String CMD_BEGIN_DRAW = "qmi.beginDraw";
+    public static final String CMD_CALL_METHOD = "qmi.callMethod";
+    public static final String CMD_CLOSE_UPLOAD_SHARE_VIDEO_DIALOG = "qmi.closeUploadShareVideoDialog";
+    public static final String CMD_CLOSE_VIDEO_LIST_DIALOG = "qmi.closeVideoListDialog";
+    public static final String CMD_CONFIG_SDK = "qmi.configSDK";
+    public static final String CMD_END_DRAW = "qmi.endDraw";
+    public static final String CMD_END_MOMENT_RECORDING = "qmi.endMomentRecording";
+    public static final String CMD_FRONT = "qmi.onFront";
+    public static final String CMD_GENERATE_MOMENT_VIDEO = "qmi.generate_moment_video";
+    public static final String CMD_GET_CPU_GPU_INFO = "qmi.getCpuGpuInfo";
+    public static final String CMD_GET_MOMENT_SOURCE_VIDEO_DURATION = "qmi.getMomentSourceVideoDuration";
+    public static final String CMD_GET_PLUGIN_LIST = "qmi.getPluginList";
+    public static final String CMD_GET_RECORDER_CURPOSITION = "qmi.getRecorderCurPosition";
+    public static final String CMD_HIDE_QMI = "qmi.hideQmi";
+    public static final String CMD_INIT_QMI = "qmi.initQmi";
+    public static final String CMD_IS_JUDGEMENT_RECORDING = "qmi.isJudgementRecording";
+    public static final String CMD_IS_RECORDING = "qmi.isRecording";
+    public static final String CMD_IS_RECORDING_MOMENT = "qmi.isRecordingMoment";
+    public static final String CMD_IS_SHOWED = "qmi.isShowed";
+    public static final String CMD_LOCK_POSITION = "qmi.lockPosition";
+    public static final String CMD_LOGIN = "qmi.login";
+    public static final String CMD_ON_START_RECORD = "qmi.onStartRecordVideo";
+    public static final String CMD_ON_STOP_RECORD = "qmi.onStopRecordVideo";
+    public static final String CMD_ON_UPDATE_VIDEO_FRAME = "qmi.onUpdateVideoFrame";
+    public static final String CMD_SCROLL_TO_SIDE = "qmi.scrollToSide";
+    public static final String CMD_SET_AUDIO_SOURCE = "qmi.setAudioSource";
+    public static final String CMD_SET_GAMEENGINE_TYPE = "qmi.setGameEngineType";
+    public static final String CMD_SET_LOCALE = "qmi.setLocale";
+    public static final String CMD_SET_LOG_LEVEL = "qmi.setLogLevel";
+    public static final String CMD_SET_RECORDER_POSITION = "qmi.setRecorderPosition";
+    public static final String CMD_SET_VIDEO_QUALITY = "qmi.setVideoQuality";
+    public static final String CMD_SHOW_UPLOAD_SHARE_VIDEO_DIALOG = "qmi.showUploadShareVideoDialog";
+    public static final String CMD_SHOW_VIDEO_LIST_DIALOG = "qmi.showVideoListDialog";
+    static final String CMD_SIMULATE_START_QMI = "qmi.simulateStartQmi";
+    public static final String CMD_START_JUDGEMENT_RECORDING = "qmi.startJudgementRecording";
+    public static final String CMD_START_MOMENT_RECORDING = "qmi.startMomentRecording";
+    public static final String CMD_START_QMI = "qmi.startQmi";
+    public static final String CMD_START_QMI_SERVICE = "qmi.startQmiService";
+    public static final String CMD_STOP_JUDGEMENT_RECORDING = "qmi.stopJudgementRecording";
+    public static final String CMD_STOP_QMI = "qmi.stopQmi";
+    public static final String CMD_UNLOCK_POSITION = "qmi.unlockPosition";
+    public static final String QMI_CMD_PREFEX = "qmi.";
+}

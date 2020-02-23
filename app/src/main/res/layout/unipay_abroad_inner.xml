@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:padding="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/unipay_abroad_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/unipay_abroad_head">
+        <TextView android:text="Buy Diamonds" style="@style/unipay_abroad_h1" />
+        <ImageButton android:src="@drawable/unipay_abroad_iconback" style="@style/unipay_abroad_topiccn" />
+        <ImageButton android:src="@drawable/unipay_abroad_iconclose" android:layout_alignParentRight="true" style="@style/unipay_abroad_topiccn" />
+    </RelativeLayout>
+    <LinearLayout android:background="@drawable/unipay_abroad_whitebg" style="@style/unipay_abroad_main" />
+</LinearLayout>

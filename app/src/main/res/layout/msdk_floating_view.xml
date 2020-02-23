@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_action" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/msdk_floatdot" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/reddot" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/msdk_red_dot" />
+</FrameLayout>

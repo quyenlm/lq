@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/qq_webview_root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/qq_webview_top_toolbar" android:tag="@string/toolbar_tag_land_show" android:background="@color/colorToolbarBg" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_all_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="enterAlways|scroll|snap">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="11.0">
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/colorFonts" android:ellipsize="end" android:gravity="center" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="4.0" />
+                <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <include android:id="@id/view_refresh_top" android:layout_width="@dimen/toolbar_icon_height" android:layout_height="@dimen/toolbar_icon_height" layout="@layout/layout_refresh_item" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ProgressBar android:id="@id/progressbar_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:max="100" android:progressDrawable="@drawable/progress_bar_states" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+    <com.tencent.imsdk.webview.qq.NestedWebView android:id="@id/nested_webview_container" android:background="@color/colorWebViewBg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/qq_webview_bottom_toolbar" android:background="@color/colorToolbarBg" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_all_height" app:layout_behavior="com.tencent.imsdk.webview.qq.BottomBehaviorPortrait">
+        <ProgressBar android:id="@id/progressbar_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:max="100" android:progressDrawable="@drawable/progress_bar_states" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="11.0">
+            <RelativeLayout android:gravity="center" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                <ImageButton android:id="@id/back" android:background="@android:color/transparent" android:layout_width="@dimen/toolbar_icon_height" android:layout_height="@dimen/toolbar_icon_height" android:src="@drawable/back" android:scaleType="fitXY" android:onClick="backOnClick" android:contentDescription="@string/imsdk_webview_back" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <ImageButton android:id="@id/forward" android:background="@android:color/transparent" android:layout_width="@dimen/toolbar_icon_height" android:layout_height="@dimen/toolbar_icon_height" android:src="@drawable/forward" android:scaleType="fitXY" android:onClick="forwardOnClick" android:contentDescription="@string/imsdk_webview_forward" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/layout_refresh_bottom" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <include android:id="@id/view_refresh_bottom" android:layout_width="@dimen/toolbar_icon_height" android:layout_height="@dimen/toolbar_icon_height" layout="@layout/layout_refresh_item" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <ImageButton android:id="@id/share" android:background="@android:color/transparent" android:layout_width="@dimen/toolbar_icon_height" android:layout_height="@dimen/toolbar_icon_height" android:src="@drawable/share" android:scaleType="fitXY" android:onClick="shareOnclick" android:contentDescription="@string/imsdk_webview_share" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <ImageButton android:id="@id/return_app" android:background="@android:color/transparent" android:layout_width="@dimen/toolbar_icon_height" android:layout_height="@dimen/toolbar_icon_height" android:src="@drawable/close" android:scaleType="fitXY" android:onClick="closeOnClick" android:contentDescription="@string/imsdk_webview_close" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

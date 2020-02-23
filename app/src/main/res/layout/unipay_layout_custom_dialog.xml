@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/unipay_id_DialogLayout" style="@style/unipay_dialog_linearLayout">
+        <TextView android:id="@id/unipay_id_DialogTittle" android:text="@string/unipay_dlg_tip" style="@style/unipay_tiptitle" />
+        <LinearLayout android:id="@id/unipay_dialog_message_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:id="@id/unipay_id_DialogMessage" style="@style/unipay_tiptitle.sub" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/unipay_id_DialogCancel" android:focusable="true" android:layout_marginRight="10.0dip" android:text="@string/unipay_cancel" android:layout_weight="100.0" style="@style/unipay_btn.thinbtn" />
+            <Button android:id="@id/unipay_id_DialogNeutral" android:focusable="true" android:text="@string/unipay_sure" android:layout_weight="100.0" style="@style/unipay_btn.thinbtn" />
+            <Button android:id="@id/unipay_id_DialogEnsure" android:focusable="true" android:layout_marginLeft="10.0dip" android:text="@string/unipay_sure" android:layout_weight="100.0" style="@style/unipay_btn.thinbtn" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/unipay_abort_link_color" android:gravity="center" android:autoLink="all" android:id="@id/boss_unipay_id_changeQQ" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" android:installLocation="auto" android:theme="@android:style/Theme.NoTitleBar" package="com.garena.game.kgvn" platformBuildVersionCode="377660" platformBuildVersionName="1.33.1.5">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <permission android:name="com.subao.permission.USE_SDK.com.garena.game.kgvn.KingsGlory"/>
+    <uses-permission android:name="com.subao.permission.USE_SDK.com.garena.game.kgvn.KingsGlory"/>
+    <permission android:name="com.garena.game.kgvn.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.garena.game.kgvn.permission.C2D_MESSAGE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:allowBackup="false" android:banner="@drawable/app_banner" android:icon="@drawable/app_icon" android:isGame="true" android:label="@string/app_name" android:name="com.garena.game.kgtw.NGameApplication" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="IS_DEBUG" android:value="false"/>
+        <meta-data android:name="android.max_aspect" android:value="2.4"/>
+        <meta-data android:name="android.vendor.full_screen" android:value="true"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <meta-data android:name="com.tencent.rdm.uuid" android:value="2096e2ac-b50e-4a8c-b01a-59c22386e5c1"/>
+        <service android:exported="false" android:name="com.tencent.tmassistantsdk.downloadservice.TMAssistantDownloadSDKService" android:process=":TMAssistantDownloadSDKService"/>
+        <service android:exported="false" android:name="com.tencent.tmdownloader.TMAssistantDownloadService" android:process=":TMAssistantDownloadSDKService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.tencent.kgvmp.socket.VmpService"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="DEVKEY_APPSFLYER" android:value="@string/DEVKEY_APPSFLYER"/>
+        <meta-data android:name="APPKEY_DENGTA" android:value="@string/APPKEY_DENGTA"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notification_icon"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="ngame.support.MultiDexActivity" android:process=":ngame_multidex" android:screenOrientation="sensorLandscape" android:theme="@style/noAnimAppCompat"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.garena.game.kgtw.BlankActivity" android:screenOrientation="sensorLandscape" android:theme="@style/noAnimAppCompat"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.garena.game.kgtw.SGameRealActivity" android:screenOrientation="sensorLandscape" android:theme="@style/noAnimAppCompat">
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true"/>
+            <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true"/>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.garena.game.kgtw.SGameActivity" android:screenOrientation="landscape" android:theme="@style/noAnimThemeDart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="action" android:scheme="fb628749490632038"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="whatsappinvite1137"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="smsinvite1137"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ngame1137"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.tencent.imsdk.IMProxyActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.tencent.imsdk.GameId" android:value="@string/com.tencent.imsdk.GameId"/>
+        <meta-data android:name="com.tencent.imsdk.SdkServer" android:value="@string/com.tencent.imsdk.SdkServer"/>
+        <meta-data android:name="com.tencent.imsdk.notice.SdkServer" android:value="@string/com.tencent.imsdk.notice.SdkServer"/>
+        <meta-data android:name="com.tencent.imsdk.debug.level" android:value="@string/com.tencent.imsdk.debug.level"/>
+        <meta-data android:name="com.tencent.imsdk.needNotice" android:value="noticeOpen:true"/>
+        <meta-data android:name="com.tencent.imsdk.noticeTime" android:value="10"/>
+        <meta-data android:name="com.tencent.imsdk.notice.IntervalRequest" android:value="@string/com.tencent.imsdk.notice.IntervalRequest"/>
+        <meta-data android:name="com.tencent.imsdk.needPush" android:value="pushOpen:true"/>
+        <meta-data android:name="com.tencent.imsdk.pushServer" android:value="/push"/>
+        <meta-data android:name="com.tencent.imsdk.webview.navHide" android:value="false"/>
+        <meta-data android:name="com.tencent.imsdk.webviewTicketServer" android:value="/user"/>
+        <meta-data android:name="com.tencent.imsdk.webview.x5work" android:value="false"/>
+        <meta-data android:name="com.tencent.imsdk.webview.nestScroll" android:value="false"/>
+        <activity android:name="com.tencent.msdk.webview.JumpShareActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.tencent.imsdk.webview.qq.WebViewWithFavActivity" android:process=":imsdk_inner_webview" android:screenOrientation="sensor" android:theme="@style/IMSDKWebViewTheme" android:windowSoftInputMode="adjustPan"/>
+        <service android:name="com.tencent.imsdk.webview.qq.WebViewService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.tencent.midas.oversea.business.APMallActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.tencent.midas.oversea.business.APProxyMallActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!--<activity android:configChanges="locale" android:name="com.tencent.imsdk.feedback.IMFeedbackActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Holo.Light" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="locale" android:name="com.tencent.imsdk.feedback.IMFeedbackReportActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:configChanges="locale" android:name="com.tencent.imsdk.feedback.IMFeedbackNewMessageActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:configChanges="locale" android:name="com.tencent.imsdk.feedback.IMFeedbackConversationActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:configChanges="locale" android:name="com.tencent.imsdk.feedback.IMFeedbackItemActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Holo.Light"/> -->
+        <meta-data android:name="APPID_BUGLY" android:value="@string/APPID_BUGLY"/>
+        <service android:exported="false" android:name="com.tencent.imsdk.expansion.downloader.impl.DownloaderService"/>
+        <meta-data android:name="TA_APPKEY" android:value="@string/TA_APPKEY"/>
+        <meta-data android:name="InstallChannel" android:value="@string/InstallChannel"/>
+        <meta-data android:name="com.tencent.imsdk.garena.Environment" android:value="@string/com.tencent.imsdk.garena.Environment"/>
+        <meta-data android:name="com.tencent.imsdk.garena.APP_SDK_KEY" android:value="@string/com.tencent.imsdk.garena.APP_SDK_KEY"/>
+        <meta-data android:name="com.garena.sdk.applicationId" android:value="@integer/com.garena.sdk.applicationId"/>
+        <meta-data android:name="com.garena.sdk.ApplicationSourceId" android:value="@integer/com.garena.sdk.ApplicationSourceId"/>
+        <meta-data android:name="com.garena.sdk.push.applicationId" android:value="@integer/com.garena.sdk.push.applicationId"/>
+        <meta-data android:name="com.beetalklib.ganalytics.report_url" android:value="@string/com.beetalklib.ganalytics.report_url"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.beetalk.sdk.BTLoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.beetalk.sdk.BTBeeTalkAuthActivity" android:screenOrientation="sensorLandscape"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/com.facebook.sdk.ApplicationId"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider628749490632038" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <provider android:authorities="com.garena.android.fileprovider100054" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.beetalk.sdk.GarenaAuthActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.beetalk.sdk.plugin.GGPluginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:enabled="true" android:exported="true" android:name="com.garena.android.gpns.GNotificationService" android:process="com.garena.msdk.pushservice2">
+            <intent-filter>
+                <action android:name="com.garena.android.gpush.GNotificationService"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:name="com.garena.android.DefaultNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.garena.android.gpns.NOTIFICATION_RECEIVE"/>
+                <category android:name="com.garena.garena_msdk_sample.app"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="MIDAS.APP_SDK_ASSIGN_ID" android:value="@string/MIDAS.APP_SDK_ASSIGN_ID"/>
+        <meta-data android:name="MIDAS.APP_SDK_SKIP_INIT" android:value="true"/>
+        <meta-data android:name="MIDAS.APP_SDK_SKIP_INIT" android:value="true"/>
+        <meta-data android:name="MIDAS.VIRTUAL_CURRENCY_NAME" android:value="@string/MIDAS.VIRTUAL_CURRENCY_NAME"/>
+        <provider android:authorities="com.garena.game.kgvn.IMSDKFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.tencent.imsdk.android.friend.IMSDKFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imsdk_file_paths"/>
+        </provider>
+        <meta-data android:name="GCloud.GCloud.GameId" android:value="@string/GCloud.GCloud.GameId"/>
+        <meta-data android:name="GCloud.TDM.AppId" android:value="@string/GCloud.GCloud.GameId"/>
+        <meta-data android:name="GCloud.TDM.TGEMIT_ROUTER_ADDRESS_FORMAL" android:value="@string/GCloud.TDM.RouterAddressFormal"/>
+        <meta-data android:name="GCloud.TDM.TGEMIT_ROUTER_TCP_PORT_FORMAL" android:value="@string/GCloud.TDM.RouterTcpFormal"/>
+        <meta-data android:name="GCloud.TDM.TGEMIT_ROUTER_UDP_PORT_FORMAL" android:value="@string/GCloud.TDM.RouterUdpFormal"/>
+        <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true"/>
+        <meta-data android:name="unity.build-id" android:value="a1141534-134a-4949-909e-bcd021ec8a13"/>
+        <meta-data android:name="unity.splash-mode" android:value="2"/>
+        <meta-data android:name="unity.splash-enable" android:value="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <provider android:authorities="com.garena.game.kgvn.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <provider android:authorities="com.garena.game.kgvn.ApolloFileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.apollo.iips.ApolloProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/apollo_file_paths"/>
+        </provider>
+        <receiver android:name="com.tencent.ieg.ntv.network.NetworkStateReciver"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.tencent.ieg.ntv.view.NTVShowActivity" android:process=":ntv" android:screenOrientation="sensorLandscape" android:theme="@style/NTV.ThemeCompat"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.tencent.ieg.ntv.ctrl.player.PopupPlayerActivity" android:theme="@style/NTV.TransparentCompat"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.component.plugin.PluginShellActivity" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.ui.CheckPermissionDialogActivity" android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustPan"/>
+        <service android:exported="false" android:name="com.tencent.component.plugin.server.PluginService"/>
+        <service android:exported="false" android:name="com.tencent.qqgamemi.QMiService"/>
+        <meta-data android:name="AWS_BUKET_NAME" android:value=""/>
+        <meta-data android:name="AWS_POOL_ID" android:value=""/>
+        <meta-data android:name="AWS_REGION" android:value=""/>
+        <meta-data android:name="DEVELOPER_PROVIDER" android:value=""/>
+        <meta-data android:name="AWS_DEVELOPER_PROVIDER_SERVER" android:value=""/>
+        <meta-data android:name="CDN_PATH_CONF" android:value=""/>
+        <service android:enabled="true" android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.garena.pay.android.GGPayActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:launchMode="singleTask" android:name="com.garena.overlay.FloatingMenuActivity" android:theme="@style/Theme.Transparent.Dialog"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.beetalk.sdk.MShopActivity" android:theme="@style/Theme.Transparent"/>
+        <service android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.garena.overlay.RecordingService"/>
+        <activity android:label="ServiceActivity" android:name="com.vk.sdk.VKServiceActivity" android:theme="@style/VK.Transparent"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.tagmanager.TagManagerService"/>
+        <activity android:exported="true" android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.garena.game.kgvn"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.garena.game.kgvn"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.google.android.gms.appinvite.PreviewActivity" android:theme="@style/Theme.AppInvite.Preview">
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.garena.game.kgvn.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    </application>
+</manifest>

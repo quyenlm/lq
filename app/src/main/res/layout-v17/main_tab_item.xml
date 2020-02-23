@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:textSize="12.0dip" android:textColor="@color/ntvs_main_tab_txt_color" android:gravity="center" android:id="@id/ntvs_main_tab_btn" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="MTAB" android:layout_weight="1.0" android:textAllCaps="false" />
+    <ImageView android:id="@id/ntvs_main_tab_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="8.0dip" android:scaleX="0.6" android:scaleY="0.6" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/common_new_point" />
+</android.support.constraint.ConstraintLayout>

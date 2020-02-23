@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fix">Open Settings</string>
+    <string name="imsdk_webview_back">回退</string>
+    <string name="imsdk_webview_cancel">取消</string>
+    <string name="imsdk_webview_close">关闭</string>
+    <string name="imsdk_webview_forward">前进</string>
+    <string name="imsdk_webview_refresh">刷新</string>
+    <string name="imsdk_webview_share">分享</string>
+    <string name="imsdk_webview_stop">停止刷新</string>
+    <string name="msdk_upload_file_title">上传文件</string>
+    <string name="package_is_invaild">Install Error: Please uninstall the application and redownload the game from Google Play.</string>
+    <string name="package_is_invaild_title" />
+    <string name="quit">Exit</string>
+    <string name="retry">Retry</string>
+    <string name="share_browser">Browser</string>
+    <string name="share_cancel">分享取消</string>
+    <string name="share_facebook">Facebook</string>
+    <string name="share_failure">分享失败</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_wechat">微信</string>
+    <string name="submit">Confirm</string>
+    <string name="u_must_agree_me">"This game requires you to grant the following permissions! Please enable these items: 
+
+Storage: Required to install and load critical game resources."</string>
+    <string name="u_must_agree_me_title">Error: Permission request denied</string>
+    <string name="u_need_agree_me">"You will be prompted to grant several permissions. The game requires you to grant all these permissions in order to avoid flashbacks. 
+
+Storage: Required to install and load critical game resources."</string>
+    <string name="u_need_agree_me_title">Permission Request</string>
+    <string name="u_need_fix_config">"In order to run the game, please grant all needed system permissions. Please enter the settings menu of your device to set permissions. 
+
+Storage: Storage needed will include the game itself and related resource packs."</string>
+    <string name="u_need_fix_config_title">Error: Permission request denied</string>
+</resources>

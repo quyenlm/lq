@@ -1,0 +1,127 @@
+package org.apache.commons.logging.impl;
+
+import java.io.Serializable;
+import java.text.DateFormat;
+import java.util.Properties;
+import org.apache.commons.logging.Log;
+
+@Deprecated
+public class SimpleLog implements Serializable, Log {
+    protected static final String DEFAULT_DATE_TIME_FORMAT = "yyyy/MM/dd HH:mm:ss:SSS zzz";
+    public static final int LOG_LEVEL_ALL = 0;
+    public static final int LOG_LEVEL_DEBUG = 2;
+    public static final int LOG_LEVEL_ERROR = 5;
+    public static final int LOG_LEVEL_FATAL = 6;
+    public static final int LOG_LEVEL_INFO = 3;
+    public static final int LOG_LEVEL_OFF = 7;
+    public static final int LOG_LEVEL_TRACE = 1;
+    public static final int LOG_LEVEL_WARN = 4;
+    protected static DateFormat dateFormatter = null;
+    protected static String dateTimeFormat = null;
+    protected static boolean showDateTime = false;
+    protected static boolean showLogName = false;
+    protected static boolean showShortName = false;
+    protected static final Properties simpleLogProps = null;
+    protected static final String systemPrefix = "org.apache.commons.logging.simplelog.";
+    protected int currentLogLevel;
+    protected String logName;
+
+    public SimpleLog(String name) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public void setLevel(int currentLogLevel2) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public int getLevel() {
+        throw new RuntimeException("Stub!");
+    }
+
+    /* access modifiers changed from: protected */
+    public void log(int type, Object message, Throwable t) {
+        throw new RuntimeException("Stub!");
+    }
+
+    /* access modifiers changed from: protected */
+    public void write(StringBuffer buffer) {
+        throw new RuntimeException("Stub!");
+    }
+
+    /* access modifiers changed from: protected */
+    public boolean isLevelEnabled(int logLevel) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final void debug(Object message) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final void debug(Object message, Throwable t) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final void trace(Object message) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final void trace(Object message, Throwable t) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final void info(Object message) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final void info(Object message, Throwable t) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final void warn(Object message) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final void warn(Object message, Throwable t) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final void error(Object message) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final void error(Object message, Throwable t) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final void fatal(Object message) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final void fatal(Object message, Throwable t) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final boolean isDebugEnabled() {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final boolean isErrorEnabled() {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final boolean isFatalEnabled() {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final boolean isInfoEnabled() {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final boolean isTraceEnabled() {
+        throw new RuntimeException("Stub!");
+    }
+
+    public final boolean isWarnEnabled() {
+        throw new RuntimeException("Stub!");
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="msdk_ad_btn_background">#fff9f9f9</item>
+    <item type="drawable" name="msdk_ad_transparent">#00000000</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="notification_template_icon_low_bg">#0cffffff</item>
+    <item type="drawable" name="thrdcall_delete_bg">#ff413e3e</item>
+    <item type="drawable" name="thrdcall_shareitems_bg">#ff393939</item>
+    <item type="drawable" name="thrdcall_sheet_cancel_btn_click">#ff5c5858</item>
+    <item type="drawable" name="thrdcall_sheet_cancel_btn_normal">#ff4c4949</item>
+    <item type="drawable" name="thrdcall_transparent">#00000000</item>
+    <item type="drawable" name="transparent">#00000000</item>
+</resources>

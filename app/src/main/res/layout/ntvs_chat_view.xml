@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/chat_history" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="36.0dip" app:layout_constraintBottom_toTopOf="@id/common_word" app:layout_constraintTop_toTopOf="parent">
+        <ListView android:id="@id/ntvs_chat_history_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:divider="@null" android:dividerHeight="2.0dip" />
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="36.0dip" android:baselineAligned="false" app:layout_constraintBottom_toTopOf="parent">
+        <View android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.3" />
+        <ImageView android:id="@id/common_word" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="center" android:scaleX="0.5" android:scaleY="0.5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/ntvs_sendMsg_Text" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/chat_quick_reply" />
+        <EditText android:textSize="11.0dip" android:textColorHint="@color/ntvs_chat_hint_text_color" android:id="@id/ntvs_sendMsg_Text" android:background="@drawable/common_input_box" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="5.0dip" android:hint="input message" android:cursorVisible="false" android:ems="10" android:inputType="textPersonName" android:imeOptions="actionSend" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/common_word" app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

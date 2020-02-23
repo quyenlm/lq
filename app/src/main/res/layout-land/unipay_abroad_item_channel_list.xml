@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/selector_channels_list" style="@style/unipay_abroad_navitem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/unipay_abroad_navitem">
+        <ImageView android:id="@id/unipay_id_channel_item_image" android:src="@drawable/unipay_abroad_qdpaym" style="@style/unipay_abroad_iconqd" />
+        <TextView android:id="@id/unipay_id_channel_item_text" android:text="Paymantmall" style="@style/unipay_abroad_textqd" />
+    </LinearLayout>
+</LinearLayout>

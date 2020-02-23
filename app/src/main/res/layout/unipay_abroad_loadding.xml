@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/unipay_abroad_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:padding="10.0dip" android:layout_centerInParent="true" style="@style/unipay_toast">
+        <ProgressBar android:id="@id/unipay_progress" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminateDrawable="@drawable/unipay_abroad_iconload" />
+        <TextView android:gravity="center" android:id="@id/unipay_id_LoadingTxt" android:layout_marginLeft="5.0dip" android:text="加载中..." style="@style/unipay_abroad_text" />
+    </LinearLayout>
+</RelativeLayout>

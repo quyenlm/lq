@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/unipay_id_mainContent" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" style="@style/unipay_abroad_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/unipay_id_mpinfoIdView" android:background="@drawable/unipay_drawable_adbg" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginRight="30.0dip" style="@style/unipay_linear">
+        <TextView android:textSize="13.0sp" android:textColor="@color/unipay_btn_high1_color" android:ellipsize="end" android:gravity="left" android:id="@id/unipay_id_mpinfoIdText" android:text="首次购买任意数额钻石，额外送5钻石＋88金币" android:singleLine="true" style="@style/unipay_text" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/unipay_id_currentRegion" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" style="@style/unipay_abroad_linear">
+        <LinearLayout style="@style/unipay_abroad_select">
+            <ImageView android:id="@id/unipay_id_currentRegion_image" android:src="@drawable/unipay_abroad_qus" style="@style/unipay_abroad_iconflag" />
+            <TextView android:id="@id/unipay_id_currentRegion_text" android:text="US" style="@style/unipay_abroad_textcountry" />
+            <ImageView style="@style/unipay_abroad_icondrop" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_weight="100.0" style="@style/unipay_abroad_fill">
+        <GridView android:id="@id/unipay_id_grid" android:layout_margin="10.0dip" android:listSelector="#00000000" android:horizontalSpacing="10.0dip" android:verticalSpacing="16.0dip" android:numColumns="3" style="@style/unipay_abroad_fill" />
+        <GridView android:id="@id/unipay_id_allRegion" android:background="@drawable/unipay_abroad_selectbg" android:visibility="gone" android:layout_width="363.0dip" android:layout_margin="10.0dip" android:listSelector="#00000000" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:numColumns="3" style="@style/unipay_abroad_wrap" />
+    </RelativeLayout>
+</LinearLayout>

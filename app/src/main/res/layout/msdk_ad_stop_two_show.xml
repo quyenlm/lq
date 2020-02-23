@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msdk_ad_frame" android:background="@color/msdk_ad_bg_white" android:layout_width="@dimen/msdk_ad_dlg_total_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/middle_content" android:layout_width="@dimen/msdk_ad_dlg_image_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/msdk_ad_dlg_image_margin_top" android:layout_marginBottom="@dimen/msdk_ad_dlg_image_margin_bottom">
+        <com.tencent.msdk.ad.view.ADScrollViewPager android:id="@id/ad_view_pager" android:layout_width="fill_parent" android:layout_height="@dimen/msdk_ad_dlg_image_height" />
+    </FrameLayout>
+    <View android:background="@color/msdk_ad_divide_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/msdk_ad_divide_line_height" />
+    <LinearLayout android:orientation="vertical" android:background="@color/msdk_ad_btn_layout_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/msdk_ad_btn_layout_height">
+        <LinearLayout android:layout_gravity="center" android:layout_width="@dimen/msdk_ad_dlg_image_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/msdk_ad_btn_layout_margin_top" android:layout_marginBottom="@dimen/msdk_ad_btn_layout_margin_bottom">
+            <Button android:textSize="@dimen/msdk_ad_dlg_btn_textsize" android:textColor="@color/msdk_ad_btn_text_color" android:gravity="center" android:id="@id/msdk_ad_btn_1" android:tag="FIRST_BTN_POSITION" android:background="@drawable/msdk_ad_first_btn_back_bkg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/msdk_ad_stop_btn1_text" android:layout_weight="1.0" />
+            <View android:background="@null" android:layout_width="@dimen/msdk_ad_btn_divide_width" android:layout_height="fill_parent" />
+            <Button android:textSize="@dimen/msdk_ad_dlg_btn_textsize" android:textColor="@color/msdk_ad_btn_text_color" android:gravity="center" android:id="@id/msdk_ad_btn_2" android:tag="SECOND_BTN_POSITION" android:background="@drawable/msdk_ad_second_btn_back_bkg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/msdk_ad_stop_btn2_text" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

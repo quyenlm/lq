@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="120.0dip" android:layout_height="110.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/floating_menu_image" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="15.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/floating_menu_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" android:layout_below="@id/floating_menu_image" />
+    <ImageView android:id="@id/floating_menu_reddot" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/msdk_red_dot" android:layout_toRightOf="@id/floating_menu_image" android:layout_alignTop="@id/floating_menu_image" />
+</RelativeLayout>

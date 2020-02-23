@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <FrameLayout android:id="@id/topBarLayout" android:background="@color/vk_share_top_blue_color" android:layout_width="fill_parent" android:layout_height="@dimen/vk_share_top_panel_height">
+        <ImageButton android:id="@id/close_btn" android:background="@null" android:layout_width="@dimen/vk_share_top_panel_height" android:layout_height="@dimen/vk_share_top_panel_height" android:src="@drawable/ic_close_white_24dp" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ab_app" android:scaleType="fitCenter" android:contentDescription="@string/vk_name" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/postContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topBarLayout">
+        <ScrollView android:background="@color/vk_white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/postContentLayout" android:paddingLeft="@dimen/vk_share_dialog_padding" android:paddingTop="@dimen/vk_share_dialog_padding_top" android:paddingRight="@dimen/vk_share_dialog_padding" android:paddingBottom="@dimen/vk_share_dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="@dimen/vk_share_title_text_size" android:textColor="@color/vk_black" android:textColorHint="@color/vk_share_link_color" android:id="@id/shareText" android:background="@color/vk_clear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/vk_new_message_text" android:inputType="textCapSentences|textMultiLine" />
+                <HorizontalScrollView android:id="@id/imagesScrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vk_share_dialog_padding">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/imagesContainer" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                </HorizontalScrollView>
+                <LinearLayout android:orientation="vertical" android:id="@id/attachmentLinkLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vk_share_top_image_margin" android:layout_marginBottom="@dimen/vk_share_link_top_margin">
+                    <TextView android:textSize="@dimen/vk_share_title_link_title_size" android:textColor="@color/vk_share_link_title_color" android:ellipsize="end" android:id="@id/linkTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+                    <TextView android:textSize="@dimen/vk_share_title_link_host_size" android:textColor="@color/vk_share_link_color" android:ellipsize="end" android:id="@id/linkHost" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:lines="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/postSettingsLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/vk_share_settings_button_min_height">
+            <View android:background="@color/vk_share_gray_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/vk_share_dialog_padding" android:layout_marginRight="@dimen/vk_share_dialog_padding" />
+            <Button android:textColor="@color/vk_share_blue_color" android:background="@drawable/vk_share_send_button_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vk_new_post_settings" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/sendButtonLayout" android:background="@color/vk_share_top_blue_color" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/postContent">
+        <ProgressBar android:id="@id/sendProgress" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar" />
+        <Button android:textSize="@dimen/vk_share_send_text_size" android:textStyle="bold" android:textColor="@color/vk_white" android:id="@id/sendButton" android:background="@drawable/vk_share_send_button_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/vk_send" />
+    </LinearLayout>
+    <View android:background="@drawable/bg_toolbar_shadow_dark" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_below="@id/topBarLayout" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/startup" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/UNeedAgreeMeLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <View android:id="@id/view1" android:background="#ffffffff" android:layout_width="300.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true" />
+        <TextView android:textColor="#ff000000" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:text="@string/u_need_agree_me" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <Button android:textColor="#ffffffff" android:id="@id/btnSubmit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip" android:text="@string/submit" android:layout_alignBottom="@id/view1" android:layout_centerHorizontal="true" style="?android:borderlessButtonStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/UMustAgreeMeLayout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <View android:id="@id/View01" android:background="#ffffffff" android:layout_width="300.0dip" android:layout_height="200.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textColor="#ff000000" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="68.0dip" android:text="@string/u_need_agree_me" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <Button android:textColor="#ffffffff" android:id="@id/btnSubmit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="26.0dip" android:text="@string/submit" android:layout_alignLeft="@id/TextView01" android:layout_alignBottom="@id/View01" style="?android:borderlessButtonStyle" />
+        <Button android:textColor="#ffffffff" android:id="@id/btnRetry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" android:layout_alignBaseline="@id/btnSubmit" android:layout_alignRight="@id/TextView01" android:layout_alignBottom="@id/btnSubmit" style="?android:borderlessButtonStyle" />
+    </RelativeLayout>
+</RelativeLayout>

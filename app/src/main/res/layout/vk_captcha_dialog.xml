@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/vk_grey_color" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/captcha_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ProgressBar android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/imageView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:contentDescription="@string/vk_enter_captcha_text" />
+    </RelativeLayout>
+    <EditText android:textColor="@color/vk_color" android:textColorHint="@color/vk_light_color" android:gravity="center" android:id="@id/captchaAnswer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/vk_enter_captcha_text" android:layout_below="@id/captcha_container" android:inputType="textFilter|textNoSuggestions" android:imeOptions="actionSend" />
+</RelativeLayout>

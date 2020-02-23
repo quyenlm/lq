@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@drawable/msdk_menu_dialog_background" android:layout_width="240.0dip" android:layout_height="240.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/menu_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.garena.overlay.CirclePageIndicator android:layout_gravity="bottom" android:id="@id/pager_indicator" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

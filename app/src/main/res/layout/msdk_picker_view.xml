@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_gravity="center" android:background="@drawable/msdk_picker_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip">
+        <TextView android:textSize="@dimen/com_garena_android_msdk_text_size_picker" android:textColor="@color/picker_header_text_color" android:id="@id/picker_header_text" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/s_picker_header_text" />
+        <LinearLayout android:orientation="vertical" android:id="@id/picker_item_list" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" />
+        <Button android:textSize="@dimen/com_garena_android_msdk_text_size_picker" android:textColor="@color/picker_other_amount_color" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_footer" android:background="@color/garena_common_transparent" android:padding="10.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/picker_other_amount" android:drawableLeft="@drawable/msdk_edit_icon" />
+    </LinearLayout>
+</ScrollView>
